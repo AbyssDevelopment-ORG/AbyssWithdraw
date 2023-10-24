@@ -1,0 +1,16 @@
+name: AbyssWithdraw
+version: '1.0.0'
+main: org.abyssdev.abysswithdraw.AbyssWithdraw
+api-version: 1.13
+depend:
+    - AbyssLib
+softdepend:
+    - AbyssEconomy
+    - Vault
+    - PlayerPoints
+    - SuperMobCoins
+authors:
+    - Relocation
+    - AbyssDev
+description: Exclusive abyss donator plugin during the swords of iron campaign for Israel
+website: https://abyssdev.org

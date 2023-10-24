@@ -1,0 +1,58 @@
+currencies:
+    "vault":
+        type: "vault"
+        base-command: "withdraw"
+        aliases:
+            - "abysswithdraw"
+        withdraw-item:
+            enchanted: true
+            material: "PAPER"
+            name: "&2&l[&a&l!&2&l] &a%player%'s Banknote &7(Right-Click)"
+            lore:
+                - " "
+                - "&aInformation"
+                - "&a- &7Worth: &f$%amount%"
+                - "&a- &7From: &f%player%"
+                - " "
+                - "&7&o(( Right-Click me to redeem &f&o$%amount%&7&o! ))"
+        messages:
+            "withdrawn":
+                sound:
+                    enabled: true
+                    value: "BLOCK_NOTE_PLING"
+                    volume: 1
+                    pitch: 1
+                message:
+                    enabled: true
+                    value:
+                        - "&a&lAbyss &8- &aYou have withdrawn &2$%amount%&a to a banknote."
+            "redeemed":
+                sound:
+                    enabled: true
+                    value: "BLOCK_NOTE_PLING"
+                    volume: 1
+                    pitch: 1
+                message:
+                    enabled: true
+                    value:
+                        - "&a&lAbyss &8- &aYou have redeemed &2$%amount%&a from a banknote."
+            "not-enough":
+                sound:
+                    enabled: true
+                    value: "FIZZ"
+                    volume: 1
+                    pitch: 1
+                message:
+                    enabled: true
+                    value:
+                        - "&c&lAbyss &8- &cYou do not have enough &4money&c to withdraw!"
+            "withdraw-help":
+                sound:
+                    enabled: true
+                    value: "FIZZ"
+                    volume: 1
+                    pitch: 1
+                message:
+                    enabled: true
+                    value:
+                        - "&c&lAbyss &8- &cInvalid arguments! Try /withdraw <amount>"
