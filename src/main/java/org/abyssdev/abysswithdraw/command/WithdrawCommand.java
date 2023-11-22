@@ -45,7 +45,7 @@ public final class WithdrawCommand extends AbyssCommand<AbyssWithdraw, Player> {
 
         final double amount = context.asDouble(0);
 
-        if (!this.economy.getEconomy().hasBalance(player, amount)) {
+        if (amount <= 0 || !this.economy.getEconomy().hasBalance(player, amount)) {
             this.economy.sendMessage(player, "not-enough", new PlaceholderReplacer()
                     .addPlaceholder("%amount%", Utils.format(amount)));
 
